@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"
+        android:paddingVertical="15dp"
+        android:orientation="vertical">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="5dp"
+            android:weightSum="4">
+
+        <ImageView
+                android:id="@+id/btn_remove_meal_dialog"
+                android:layout_width="0dp"
+                android:layout_height="42dp"
+                android:src="@drawable/ic_remove"
+                android:layout_weight="1"/>
+
+        <TextView
+                android:id="@+id/txt_num_of_meals_dialog"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="0"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_weight="2"/>
+
+        <ImageView
+                android:id="@+id/btn_add_meal_dialog"
+                android:layout_width="0dp"
+                android:layout_height="42dp"
+                android:src="@drawable/ic_add"
+                android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginHorizontal="10dp"
+            android:weightSum="3">
+
+        <Button
+                android:id="@+id/btn_update_dialog"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/WhiteGrey"
+                android:text="Update"
+                android:textSize="18sp"
+                android:textAllCaps="false"
+                android:background="@color/colorPrimaryDark"
+                android:layout_weight="1"/>
+
+
+        <Button
+                android:id="@+id/btn_delete_dialog"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/WhiteGrey"
+                android:text="Delete"
+                android:textSize="18sp"
+                android:textAllCaps="false"
+                android:background="@color/colorPrimaryDark"
+                android:layout_marginHorizontal="5dp"
+                android:layout_weight="1"/>
+
+
+        <Button
+                android:id="@+id/btn_cancel_dialog"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/WhiteGrey"
+                android:text="Cancel"
+                android:textSize="18sp"
+                android:textAllCaps="false"
+                android:background="@color/colorPrimaryDark"
+                android:layout_weight="1"/>
+
+    </LinearLayout>
+
+</LinearLayout>

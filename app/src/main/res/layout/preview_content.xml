@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:context=".DetailsPreview"
+        tools:showIn="@layout/preview_app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:id="@+id/details_preview_layout"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+            <TextView
+                    android:id="@+id/details_preview_txt_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="meal1"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_marginLeft="15dp"
+                    android:textStyle="bold"/>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="right"
+                    android:layout_marginRight="25dp">
+
+                <TextView
+                        android:id="@+id/details_preview_txt_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="55"
+                        android:layout_marginHorizontal="6dp"
+                        android:textSize="18sp"
+                        android:textColor="#000"/>
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:textColor="#000"
+                        android:text="LE"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+                android:id="@+id/details_preview_txt_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="meals details her"
+                android:textSize="18sp"
+                android:textColor="#3F3C3C"
+                android:layout_margin="15dp"/>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#FFEA98"
+                android:paddingVertical="15dp"
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginVertical="5dp">
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginHorizontal="5dp"
+                    android:weightSum="4">
+
+                <ImageView
+                        android:id="@+id/btn_remove_meal"
+                        android:layout_width="0dp"
+                        android:layout_height="42dp"
+                        android:src="@drawable/ic_remove"
+                        android:layout_weight="1"/>
+
+                <TextView
+                        android:id="@+id/txt_num_of_meals"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:text="1"
+                        android:textSize="20sp"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:layout_weight="2"/>
+
+                <ImageView
+                        android:id="@+id/btn_add_meal"
+                        android:layout_width="0dp"
+                        android:layout_height="42dp"
+                        android:src="@drawable/ic_add"
+                        android:layout_weight="1"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginHorizontal="10dp">
+
+                <TextView
+                        android:layout_height="match_parent"
+                        android:layout_width="wrap_content"
+                        android:text="Total price: "
+                        android:textSize="20sp"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textColor="#585555"/>
+
+                <TextView
+                        android:id="@+id/txt_total_price"
+                        android:layout_height="match_parent"
+                        android:layout_width="wrap_content"
+                        android:text="0 LE"
+                        android:textSize="20sp"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textColor="#8B0202"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+                android:id="@+id/btn_add_meal_to_market"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginTop="15dp"
+                android:background="@color/colorPrimary"
+                android:text="Add to Market"
+                android:textAllCaps="false"
+                android:textSize="18sp"/>
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>
